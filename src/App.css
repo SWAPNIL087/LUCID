@@ -1,0 +1,337 @@
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.uploadbtn:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  color: rgba(251, 205, 2, 0.699) !important;
+}
+.preview{
+  color: white !important;
+}
+
+.preview:hover{
+  cursor: pointer;
+  color:rgb(255, 255, 255) !important;
+  transform: scale(1.1);
+  font-weight: bold;
+
+}
+.PreviewImage{
+  border-radius: 20px;
+}
+.socialmedia:hover{
+  cursor: pointer;
+}
+.search{
+  background-color: transparent;
+  border-radius: 20px ;
+  text-align: center;
+  font-weight:bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.searchbar{
+  margin-top:-25px;
+  
+}
+.search:focus{
+  outline: None;
+  border-color: rgb(10, 226, 208) !important;
+}
+.search:hover{
+  border-color: rgb(10, 226, 208) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(10, 226, 208);
+}
+.searchIcon{
+  color:black;
+  font-size: 30px;
+  margin-top: -6px;
+}
+.searchIcon:hover{
+  color:rgb(10, 226, 208);
+  cursor: pointer;
+}
+.nav-link:hover{
+  color:rgb(10, 226, 208) !important;
+  transform: scale(1.1);
+}
+
+
+#header {
+  position: absolute;
+  width: 220px;
+  
+}
+#header .pro-sidebar {
+  height: 460px;
+  top:85px;
+  position: fixed;
+}
+#header .closemenu {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+  line-height: 20px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 22px;
+  top: 45%;
+  cursor: pointer;
+}
+#header .pro-sidebar {
+  width: 25%;
+  min-width: 25%;
+}
+
+@media only screen and (max-width: 728px) {
+  #header .pro-sidebar {
+    width: 50%;
+    min-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #header .pro-sidebar {
+    width: 80%;
+    min-width: 80%;
+  }
+}
+#header .pro-sidebar.collapsed {
+  width: 20px;
+  min-width: 20px;
+}
+#header .pro-sidebar-inner {
+  background-color: rgba(0, 247, 255, 0.726);
+  box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.322);
+}
+#header .pro-sidebar-inner .pro-sidebar-layout {
+  overflow-y: hidden;
+}
+#header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
+  font-size: 20px;
+  padding: 0 20px;
+  color: #000;
+  font-weight: bold;
+}
+#header .pro-sidebar-inner .pro-sidebar-layout ul {
+  padding: 0 5px;
+}
+#header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
+  color: #000;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+#header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
+  background-color:transparent;
+  color: #000;
+  font-size: 20px;
+  border-radius: 3px;
+}
+#header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper .pro-item-content {
+  color: #000;
+}
+#header .pro-sidebar-inner .pro-sidebar-layout .active {
+  background-image: linear-gradient(30deg, #ffffff 0%, #ffffff78 100%);
+}
+#header .logo {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 100px) {
+  html {
+    overflow: scroll;
+  }
+}
+
+#header .closemenu:hover{
+  color:white;
+}
+.pro-inner-item:hover{
+  background-image: linear-gradient(30deg, #ffffff 0%, #ffffff78 100%);
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item{
+  width: 200px;
+  height: 200px;
+  border-radius: 22px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.itemB{
+  width: 250px;
+  height: 250px;
+  border-radius: 22px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.item2{
+  width: 300px;
+  height: 300px;
+  border-radius: 22px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.item:hover{
+  transform: scale(1.04);
+  transition: .1s;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.226);
+}
+.itemB:hover{
+  transform: scale(1.04);
+  opacity: 0.2;
+  transition: .3s;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.226);
+  border:2px solid black;
+}
+.itemB:hover + .book_details{
+  z-index: -2;
+  display: block;
+  
+}
+
+.item2:hover{
+  transform: scale(1.04);
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+}
+.rainbow-text {
+  background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.summary-box{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.book_details{
+  margin-left: 20px;
+  width:220px;
+  margin-top: -200px;
+  display: None;
+  font-weight: bolder;
+}
+.loader{
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left:50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  
+}
+.loading_text{
+  transform: rotate(-45deg);
+}
+.upload_details{
+  background-color: rgba(31, 29, 29, 0.822);
+  position: absolute;
+  z-index: 1 !important;
+  min-width:90%;
+  min-height: 80%;
+  box-shadow: 0 10px 50px 0 rgba(0, 183, 255, 0.2), 0 6px 20px 0 rgba(0, 255, 234, 0.19);
+  border-radius:40px;
+  transition: .3s;
+  margin-left: 5%;
+}
+.upload_details:hover{
+  border:1px solid rgba(0, 0, 0, 0.123);
+  
+}
+.modal-backdrop {
+  z-index: 0 !important;
+}
+.close{
+  position: absolute;
+  left:90%;
+  top:3%;
+  z-index: 10;
+}
+.close:hover{
+  color: white;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.upload_icon{
+  position: absolute;
+  top: 50%;
+  left:47%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+
+.cardx{
+  border-radius: 25px;
+  height:150px;
+  text-align: center;
+  margin-left: auto;
+  box-shadow: 0 4px 8px 0 rgba(2, 238, 255, 0.466), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+
+.pdfbtn:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  color: rgba(251, 205, 2, 0.699) !important;
+}
+
+.pdfView {
+  background-color: rgba(173, 172, 172, 0.658);
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.react-pdf__Page{
+  display: flex;
+  justify-content: center;
+
+}
+
+canvas{
+  margin-bottom:25px;
+}
+
+.closePDF:hover{
+  cursor:pointer;
+  transform: scale(1.05);
+  color: rgba(8, 153, 129, 0.87);
+}
+.home{
+  
+}
+.home{
+  background-color: hsl(258, 96%, 10%);
+}
+.home{
+  background-image: url('/src/components/background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.navbar{
+  background-color: hsl(258, 96%, 10%);
+}
+.footer{
+  
+  background-color: hsl(258, 96%, 10%);
+}
