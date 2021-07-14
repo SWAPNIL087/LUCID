@@ -93,7 +93,7 @@ def recommends(q):
     #typed_book_name = 'ProdigalSummer'
     typed_book_name = q
     '''must implement elastic search here'''
-
+    
 
 
     if(typed_book_name in us_canada_user_rating_pivot.index):

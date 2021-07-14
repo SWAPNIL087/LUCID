@@ -335,3 +335,12 @@ canvas{
   
   background-color: hsl(258, 96%, 10%);
 }
+
+.typeahead{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.options:hover{
+  background-color: rgb(0, 183, 255);
+  color:white;
+  cursor: pointer;
+}
